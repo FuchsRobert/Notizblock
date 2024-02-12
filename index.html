@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notizblock</title>
+
+    <link rel="icon" href="./img/notepad.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fonts.css">
+    <script src="./script.js"></script>
+</head>
+
+<body onload="render(); includeHTML()">
+
+    <header>
+        <div w3-include-html="./templates/header.html"></div>
+    </header>
+
+    <div class="inputBox" id="maximiseInput">
+        <input type="text" placeholder="Notiz schreiben ..." class="inputField" onclick="maximise()">
+    </div>
+
+    <div id="myNotes">
+    </div>
+
+    <div class="myNotesStyle" id="bulb">
+        <img class="bulbImage" src="./img/bulb.png" alt="Glühbirne">
+        <h2>Hier werden hinzugefügte Notizen angezeigt</h2>
+        </div>
+
+</body>
+
+</html>
